@@ -28,11 +28,11 @@ position = Vector2( 0, -417.155 )
 current = true
 limit_left = 0
 limit_top = 0
-limit_smoothed = true
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
-smoothing_enabled = true
-smoothing_speed = 7.0
+smoothing_speed = 10.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
 
 [node name="EnemyDetector" type="Area2D" parent="."]
 modulate = Color( 0.0784314, 0.239216, 0.870588, 1 )

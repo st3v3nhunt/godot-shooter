@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/UI/Title.tscn" type="PackedScene" id=1]
-[ext_resource path="res://src/UI/PlayButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/UI/ChangeSceneButton.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/UI/QuitButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/background.png" type="Texture" id=4]
 [ext_resource path="res://assets/ui_theme.tres" type="Theme" id=5]
@@ -11,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 5 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -20,25 +21,26 @@ anchor_bottom = 1.0
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Title" parent="." instance=ExtResource( 1 )]
-margin_left = -164.5
-margin_top = 447.231
-margin_right = 164.5
-margin_bottom = 478.231
+margin_left = -194.791
+margin_top = 408.032
+margin_right = 210.209
+margin_bottom = 446.032
 text = "My first Godot platformer"
 valign = 1
 
 [node name="Menu" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -426.5
-margin_top = 579.084
-margin_right = 426.5
-margin_bottom = 657.084
-rect_scale = Vector2( 0.99649, 1.25787 )
+margin_left = -148.0
+margin_top = 511.0
+margin_right = 675.0
+margin_bottom = 643.0
+rect_scale = Vector2( 0.41255, 1.06638 )
 size_flags_vertical = 3
 theme = ExtResource( 5 )
 alignment = 1
@@ -47,10 +49,11 @@ __meta__ = {
 }
 
 [node name="PlayButton" parent="Menu" instance=ExtResource( 2 )]
-margin_right = 853.0
-margin_bottom = 37.0
+margin_right = 823.0
+margin_bottom = 64.0
+next_scene_path = "res://src/Levels/Level01.tscn"
 
 [node name="QuitButton" parent="Menu" instance=ExtResource( 3 )]
-margin_top = 41.0
-margin_right = 853.0
-margin_bottom = 78.0
+margin_top = 68.0
+margin_right = 823.0
+margin_bottom = 132.0

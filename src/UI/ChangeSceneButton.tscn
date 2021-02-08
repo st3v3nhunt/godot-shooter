@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/ui_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/font_default.tres" type="DynamicFont" id=2]
+[ext_resource path="res://src/UI/PlayButton.gd" type="Script" id=3]
+
+[node name="ChangeSceneButton" type="Button"]
+margin_right = 150.0
+margin_bottom = 25.0
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Play"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="." to="." method="_on_button_up"]

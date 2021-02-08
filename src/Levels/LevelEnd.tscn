@@ -58,7 +58,6 @@ tile_data = PoolIntArray( 65535, 0, 0, 0, 0, 0, 23, 0, 0, 24, 0, 0, 131071, 0, 0
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 170.723, 929.129 )
-speed = Vector2( 800, 1400 )
 gravity = 4000.0
 
 [node name="Coin" parent="." instance=ExtResource( 5 )]
@@ -66,3 +65,5 @@ position = Vector2( 365.416, 181.996 )
 
 [node name="Coin2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 828.216, 181.996 )
+
+[editable path="Player"]

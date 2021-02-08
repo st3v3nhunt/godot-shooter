@@ -1,9 +1,8 @@
 [gd_scene format=2]
 
 [node name="QuitButton" type="Button"]
-margin_top = 24.0
-margin_right = 382.0
-margin_bottom = 44.0
+margin_right = 150.0
+margin_bottom = 25.0
 size_flags_vertical = 3
 text = "Quit"
 __meta__ = {

@@ -1,8 +1,8 @@
 [gd_scene format=2]
 
 [node name="PlayButton" type="Button"]
-margin_right = 382.0
-margin_bottom = 20.0
+margin_right = 150.0
+margin_bottom = 25.0
 size_flags_vertical = 3
 text = "Play"
 __meta__ = {

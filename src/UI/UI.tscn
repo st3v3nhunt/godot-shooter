@@ -20,10 +20,10 @@ __meta__ = {
 [node name="Label" type="Label" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -202.817
-margin_top = 60.5446
-margin_right = -53.8174
-margin_bottom = 98.5446
+margin_left = -300.361
+margin_top = 112.68
+margin_right = -151.361
+margin_bottom = 150.68
 text = "Score: %s"
 align = 2
 
@@ -38,7 +38,7 @@ margin_top = 282.541
 margin_bottom = 320.541
 text = "Paused"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PauseOverlay"]
+[node name="MenuButtons" type="VBoxContainer" parent="PauseOverlay"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -51,18 +51,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ChangeSceneButton" parent="PauseOverlay/VBoxContainer" instance=ExtResource( 3 )]
+[node name="ChangeSceneButton" parent="PauseOverlay/MenuButtons" instance=ExtResource( 3 )]
 margin_right = 336.0
 margin_bottom = 88.0
 text = "Main Screen"
 next_scene_path = "res://src/Screens/MainScreen.tscn"
 
-[node name="RetryButton" parent="PauseOverlay/VBoxContainer" instance=ExtResource( 5 )]
+[node name="RetryButton" parent="PauseOverlay/MenuButtons" instance=ExtResource( 5 )]
 margin_top = 92.0
 margin_right = 336.0
 margin_bottom = 180.0
 
-[node name="QuitButton" parent="PauseOverlay/VBoxContainer" instance=ExtResource( 2 )]
+[node name="QuitButton" parent="PauseOverlay/MenuButtons" instance=ExtResource( 2 )]
 margin_top = 184.0
 margin_right = 336.0
 margin_bottom = 272.0

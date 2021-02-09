@@ -33,7 +33,7 @@ margin_bottom = 446.032
 text = "My first Godot platformer"
 valign = 1
 
-[node name="Menu" type="VBoxContainer" parent="."]
+[node name="MenuButtons" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -148.0
@@ -48,12 +48,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PlayButton" parent="Menu" instance=ExtResource( 2 )]
+[node name="PlayButton" parent="MenuButtons" instance=ExtResource( 2 )]
 margin_right = 823.0
 margin_bottom = 64.0
 next_scene_path = "res://src/Levels/Level01.tscn"
 
-[node name="QuitButton" parent="Menu" instance=ExtResource( 3 )]
+[node name="QuitButton" parent="MenuButtons" instance=ExtResource( 3 )]
 margin_top = 68.0
 margin_right = 823.0
 margin_bottom = 132.0

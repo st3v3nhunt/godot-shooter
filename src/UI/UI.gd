@@ -12,11 +12,15 @@ var paused: = false setget set_paused
 func _ready() -> void:
   PlayerData.connect("score_updated", self, "update_interface")
   PlayerData.connect("player_died", self, "_on_PlayerData_player_died")
+  PlayerData.connect("player_died", self, "_on_Player_reset")
   update_interface()
 
 func _on_PlayerData_player_died() -> void:
   self.paused = true
   pause_title.text = DIED_MESSAGE
+
+func _on_Player_reset() -> void:
+  self.paused = false
 
 func _unhandled_input(event: InputEvent) -> void:
   if event.is_action_pressed("pause") && pause_title.text != DIED_MESSAGE:

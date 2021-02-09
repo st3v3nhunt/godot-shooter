@@ -8,7 +8,7 @@ func _on_EnemyDetector_area_entered(area: Area2D) -> void:
 
 # kill player
 func _on_EnemyDetector_body_entered(body: Node) -> void:
-  queue_free()
+  die()
 
 func _physics_process(delta: float) -> void:
   can_jump = 10 if is_on_floor() else can_jump - 1
@@ -41,3 +41,7 @@ func calculate_stomp_velocity(linear_velocity: Vector2, impulse: float) -> Vecto
   var velocity: = linear_velocity
   velocity.y = -impulse
   return velocity
+
+func die() -> void:
+  PlayerData.deaths += 1
+  queue_free()
